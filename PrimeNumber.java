@@ -8,8 +8,11 @@ public class PrimeNumber {
 		int count = 0;
 		
 		for(int k=2; k<n; k++) {
-			if(n%k == 0) 
+			if(n%k == 0){ 
 				count++;
+				break;
+			}
+			System.out.println(k);
 		}
 		
 		if(count == 0)
