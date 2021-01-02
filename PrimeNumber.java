@@ -7,12 +7,12 @@ public class PrimeNumber {
 		
 		int count = 0;
 		
-		for(int k=1; k<=n; k++) {
+		for(int k=2; k<n; k++) {
 			if(n%k == 0) 
 				count++;
 		}
 		
-		if(count == 2)
+		if(count == 0)
 			System.out.println(n + " is prime number!");
 		else
 			System.out.println(n + " is NOT prime number.");
